@@ -305,6 +305,13 @@
             $(".toggle").click(function(){
                 $("header").toggleClass("show")
             })
+             $(".header-ul .nav-item").click(function () {
+                // Set the clicked link as active
+                $(".header-ul .nav-item").removeClass("active");
+                $(this).addClass("active");
+
+                $("header").removeClass("show");
+            });
         });
     </script>
    <script>

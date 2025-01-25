@@ -352,7 +352,8 @@
   }
 
   .backtotop {
-    right: 50px;
+    right: 25px;
+    bottom: 25px;
   }
 
   .main-content {

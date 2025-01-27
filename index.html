@@ -355,6 +355,25 @@
             $(".resume-link").removeClass("active")
             $(".work-link").removeClass("active")
         });
+        $(window).scroll(function() {
+        var scrollPosition = $(window).scrollTop();
+        
+        $(".section").each(function() {
+            var sectionOffset = $(this).offset().top;
+            var sectionHeight = $(this).outerHeight();
+            
+            // Check if the section is in the viewport
+            if (scrollPosition >= sectionOffset - 100 && scrollPosition < sectionOffset + sectionHeight - 100) {
+                var sectionId = $(this).attr("id");
+                
+                // Remove active from all links
+                $(".nav-link").removeClass("active");
+                
+                // Add active class to the corresponding link
+                $("#" + sectionId + "-link").addClass("active");
+            }
+        });
+    });
     })
    </script>
 </body>

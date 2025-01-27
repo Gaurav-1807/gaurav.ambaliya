@@ -326,55 +326,96 @@
         
    </script>
    <script>
-    $(document).ready(function(){
-        $(".about-link").click(function(){
-            $(this).addClass("active");
-            $(".home-link").removeClass("active")
-            $(".contact-link").removeClass("active")
-            $(".resume-link").removeClass("active")
-            $(".work-link").removeClass("active")
-        });
-        $(".work-link").click(function(){
-            $(this).addClass("active");
-            $(".about-link").removeClass("active")
-            $(".contact-link").removeClass("active")
-            $(".resume-link").removeClass("active")
-            $(".home-link").removeClass("active")
-        });
-        $(".resume-link").click(function(){
-            $(this).addClass("active");
-            $(".about-link").removeClass("active")
-            $(".contact-link").removeClass("active")
-            $(".home-link").removeClass("active")
-            $(".work-link").removeClass("active")
-        });
-        $(".contact-link").click(function(){
-            $(this).addClass("active");
-            $(".about-link").removeClass("active")
-            $(".home-link").removeClass("active")
-            $(".resume-link").removeClass("active")
-            $(".work-link").removeClass("active")
-        });
-        $(window).scroll(function() {
-        var scrollPosition = $(window).scrollTop();
+    // $(document).ready(function(){
+    //     $(".about-link").click(function(){
+    //         $(this).addClass("active");
+    //         $(".home-link").removeClass("active")
+    //         $(".contact-link").removeClass("active")
+    //         $(".resume-link").removeClass("active")
+    //         $(".work-link").removeClass("active")
+    //     });
+    //     $(".work-link").click(function(){
+    //         $(this).addClass("active");
+    //         $(".about-link").removeClass("active")
+    //         $(".contact-link").removeClass("active")
+    //         $(".resume-link").removeClass("active")
+    //         $(".home-link").removeClass("active")
+    //     });
+    //     $(".resume-link").click(function(){
+    //         $(this).addClass("active");
+    //         $(".about-link").removeClass("active")
+    //         $(".contact-link").removeClass("active")
+    //         $(".home-link").removeClass("active")
+    //         $(".work-link").removeClass("active")
+    //     });
+    //     $(".contact-link").click(function(){
+    //         $(this).addClass("active");
+    //         $(".about-link").removeClass("active")
+    //         $(".home-link").removeClass("active")
+    //         $(".resume-link").removeClass("active")
+    //         $(".work-link").removeClass("active")
+    //     });
+    //     $(window).scroll(function() {
+    //     var scrollPosition = $(window).scrollTop();
         
-        $(".section").each(function() {
-            var sectionOffset = $(this).offset().top;
-            var sectionHeight = $(this).outerHeight();
+    //     $(".section").each(function() {
+    //         var sectionOffset = $(this).offset().top;
+    //         var sectionHeight = $(this).outerHeight();
             
-            // Check if the section is in the viewport
-            if (scrollPosition >= sectionOffset - 100 && scrollPosition < sectionOffset + sectionHeight - 100) {
+    //         // Check if the section is in the viewport
+    //         if (scrollPosition >= sectionOffset - 100 && scrollPosition < sectionOffset + sectionHeight - 100) {
+    //             var sectionId = $(this).attr("id");
+                
+    //             // Remove active from all links
+    //             $(".nav-link").removeClass("active");
+                
+    //             // Add active class to the corresponding link
+    //             $("#" + sectionId + "-link").addClass("active");
+    //         }
+    //     });
+    // });
+    // })
+       $(document).ready(function(){
+    // Click event to activate the correct link
+    $(".about-link").click(function(){
+        setActiveLink("about");
+    });
+    $(".work-link").click(function(){
+        setActiveLink("works");
+    });
+    $(".resume-link").click(function(){
+        setActiveLink("resume");
+    });
+    $(".contact-link").click(function(){
+        setActiveLink("contact");
+    });
+    
+    // Function to set the active link based on the section ID
+    function setActiveLink(sectionId) {
+        $(".nav-item").removeClass("active");
+        $("#" + sectionId + "-link").addClass("active");
+    }
+
+    // Scroll event to update active link based on visible section
+    $(window).on('scroll', function() {
+        var scrollPosition = $(this).scrollTop() + 100; // Offset to trigger earlier
+
+        $("section").each(function() {
+            var sectionTop = $(this).offset().top;
+            var sectionBottom = sectionTop + $(this).outerHeight();
+
+            // Check if the section is within the viewport
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 var sectionId = $(this).attr("id");
-                
-                // Remove active from all links
-                $(".nav-link").removeClass("active");
-                
-                // Add active class to the corresponding link
-                $("#" + sectionId + "-link").addClass("active");
+                setActiveLink(sectionId);
             }
         });
     });
-    })
+
+    // Optional: Trigger scroll on page load to ensure the correct link is active
+    $(window).trigger('scroll');
+});
+
    </script>
 </body>
 

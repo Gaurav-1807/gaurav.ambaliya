@@ -36,6 +36,7 @@ html{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
 .container{
     max-width: 1140px;
@@ -361,6 +362,7 @@ display: none !important;
     font-weight: 300;
     color: #0C0C0C;
     font-size: 14px;
+    word-wrap: break-word;
 }
 .about ul li i{
     font-size: 14px;

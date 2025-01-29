@@ -381,7 +381,10 @@
     border-width: 2px;
   }
 
-  
+  .skill-item{
+    margin-bottom: 10px;
+    padding: 10px
+  }
   .show {
 
     z-index: 9999;

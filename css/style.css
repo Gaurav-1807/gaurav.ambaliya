@@ -20,6 +20,16 @@ body{
     background-color: #0C0C0C;
    
 }
+
+svg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+	width: 150px;
+}
+
 html{
     scroll-behavior: smooth;
 }

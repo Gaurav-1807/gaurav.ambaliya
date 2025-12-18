@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="images/user-solid-full (1).svg" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/stylesheet.css" as="style">
+    <link rel="preload" href="css/style1.css" as="style">
+    
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -53,14 +58,14 @@
             </g>
         </svg>
     </div>
-    <div id="content" style="display: none;">
+    <div id="content" style="display: none; opacity: 0;">
     <div class="wrapper">
         <div class="toggle">
             <i class="fa-solid fa-bars"></i>
         </div>
         <header class="header pull-left">
             <div class="avtar">
-                <img src="images/1.jpg" alt="">
+                <img src="images/1.jpg" alt="Gaurav Ambaliya" loading="eager">
             </div>
             <h2>GAURAV AMBALIYA</h2>
             <h3>@ Web Developer</h3>
@@ -81,7 +86,7 @@
                 <ul class="header-ul">
                     <li><a href="#" class="nav-item home-link active">WELCOME</a></li>
                     <li><a href="#about" class="nav-item about-link">ABOUT</a></li>
-                    <li><a href="#skill" class="nav-item about-link">SKILL</a></li>
+                    <li><a href="#skill" class="nav-item skill-link">SKILL</a></li>
                     <li><a href="#resume" class="nav-item resume-link">EDUCATION / EXPERIENCE</a></li>
                     <li><a href="#works" class="nav-item work-link">WORKS</a></li>
                     <li><a href="#contact" class="nav-item contact-link">CONTACT</a></li>
@@ -99,7 +104,7 @@
                     <div class="baner baner-bg">
                         <div class="baner-overlay">
                             <div class="baner-center">
-                                <h2>I am a Back-end develper..!</h2>
+                                <h2>I am a Web Developer..!</h2>
                                 <h4>- Gaurav Ambaliya -</h4>
                             </div>
                         </div>
@@ -109,7 +114,7 @@
                     <div class="baner baner-bg-2">
                         <div class="baner-overlay">
                             <div class="baner-center">
-                                <h2>I am a Back-end develper..!</h2>
+                                <h2>I am a Web Developer..!</h2>
                                 <h4>- Gaurav Ambaliya -</h4>
                             </div>
                         </div>
@@ -130,7 +135,7 @@
                     <li><i class="fa-solid fa-left-long"></i> Phone: +91 76218 71243</li>
 
                 </ul>
-                <p>Jr. Node.js Backend Developer at Medionce Solution Pvt. Ltd. with expertise in backend development, microservices, and cloud infrastructure management. Skilled in optimizing performance using AWS, Bitbucket, and secure system implementations. Proficient in integrating APIs and enhancing web applications.</p>
+                <p>Full Stack Web Developer with expertise in MERN stack (MongoDB, Express.js, React, Node.js), backend development, and cloud infrastructure management. Skilled in building scalable web applications, RESTful APIs, and microservices. Proficient in AWS, Bitbucket, and modern development practices. Experienced in both frontend and backend technologies to deliver complete web solutions.</p>
             </section>
 
             <section class="about padding-50" id="skill">
@@ -286,10 +291,36 @@
                         <div class="col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <div class="skill-item">
                                 <h3 class="pull-left">
+                                    REACT JS
+                                </h3>
+                                <span class="pull-right">
+                                    90%
+                                </span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-xl-6 col-sm-12">
+                            <div class="skill-item">
+                                <h3 class="pull-left">
                                     BIT BUCKET
                                 </h3>
                                 <span class="pull-right">
                                     90%
+                                </span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-xl-6 col-sm-12">
+                            <div class="skill-item">
+                                <h3 class="pull-left">
+                                    AWS
+                                </h3>
+                                <span class="pull-right">
+                                    85%
                                 </span>
                             </div>
                             <div class="progress">
@@ -377,38 +408,38 @@
                     <div class="row">
                         <div class=" col-md-6 col-xs-12 col-xl-6">
                             <div class="portfolio-image">
-                                <img src="images/Screenshot 2023-06-05 184327.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 184327.png" alt="Whiz Cyber-Security" loading="lazy">
                                 <h2>Whiz Cyber-Security</h2>
                             </div>
                         </div>
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <div class="portfolio-image-2">
-                                <img src="images/Screenshot 2023-06-05 184451.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 184451.png" alt="The Cappa Hotel" loading="lazy">
                                 <h2>The Cappa Hotel</h2>
                             </div>
                         </div>
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <div class="portfolio-image-3">
-                                <img src="images/Screenshot 2023-06-05 184650.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 184650.png" alt="The Cafe King" loading="lazy">
                                 <h2>The Cafe King</h2>
                             </div>
                         </div>
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <div class="portfolio-image-4">
-                                <img src="images/Screenshot 2023-06-05 184820.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 184820.png" alt="Mellis Beauty & Spa" loading="lazy">
                                 <h2>Mellis Beauty & Spa</h2>
                             </div>
                         </div>
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <div class="portfolio-image-5">
-                                <img src="images/Screenshot 2023-06-05 185021.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 185021.png" alt="RioRelax Luxury Hotel" loading="lazy">
                                 <h2>RioRelax Luxury Hotel</h2>
                             </div>
                         </div>
                          <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <a href="https://seogram.pages.dev/" target="_blank">
                                 <div class="portfolio-image-6">
-                                <img src="images/Screenshot 2023-06-05 185056.png" alt="">
+                                <img src="images/Screenshot 2023-06-05 185056.png" alt="SeoGram" loading="lazy">
                                 <h2>SeoGram</h2>
                             </a>
                             </div>
@@ -416,7 +447,7 @@
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <a href="https://talkflow-front.onrender.com/" target="_blank">
                                 <div class="portfolio-image-6">
-                                <img src="images/chat_app_ss.png" alt="">
+                                <img src="images/chat_app_ss.png" alt="Chat App" loading="lazy">
                                 <h2>Chat App</h2>
                             </a>
                             </div>
@@ -424,7 +455,7 @@
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <a href="https://konsept.pages.dev/" target="_blank">
                                 <div class="portfolio-image-6">
-                                <img src="images/konsep_ss.png" alt="">
+                                <img src="images/konsep_ss.png" alt="Konsept - The Decore App" loading="lazy">
                                 <h2>Konsept - The Decore App</h2>
                             </a>
                             </div>
@@ -432,7 +463,7 @@
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                         <a href="https://dv-jwelery.pages.dev/" target="_blank">
                             <div class="portfolio-image-6">
-                                <img src="images/dv_ss.png" alt="">
+                                <img src="images/dv_ss.png" alt="DV Jwelery" loading="lazy">
                                 <h2>DV Jwelery</h2>
                         </a>
                         </div>
@@ -440,7 +471,7 @@
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                         <a href="https://doctor-mr-scheduling-frontend.onrender.com/" target="_blank">
                             <div class="portfolio-image-6">
-                                <img src="images/Screenshot (40).png" alt="">
+                                <img src="images/Screenshot (40).png" alt="MRAIo - Doctor-MR Scheduling Platform" loading="lazy">
                                 <h2>MRAIo - Doctor-MR Scheduling Platform</h2>
                           </a>
                          </div>
@@ -502,18 +533,52 @@
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
-        window.onload = function () {
-            // Show loader
-            document.getElementById('loader').style.display = 'block';
-            document.getElementById('loader').style.zIndex = '99999';
-            // document.body.style.backgroundColor = 'black';
-
-            setTimeout(function () {
-                document.getElementById('loader').style.display = 'none';  // Hide loader
-                document.getElementById('content').style.display = 'block';  // Show content
-                document.body.style.backgroundColor = '';
-            },5000);
-        };
+        // Show content immediately when DOM is ready, don't wait for all images
+        document.addEventListener('DOMContentLoaded', function() {
+            var loader = document.getElementById('loader');
+            var content = document.getElementById('content');
+            
+            // Minimum loader time for smooth transition
+            var minLoaderTime = 800;
+            var startTime = Date.now();
+            
+            function hideLoader() {
+                var elapsedTime = Date.now() - startTime;
+                var remainingTime = Math.max(0, minLoaderTime - elapsedTime);
+                
+                setTimeout(function() {
+                    loader.style.opacity = '0';
+                    loader.style.transition = 'opacity 0.3s ease';
+                    
+                    setTimeout(function() {
+                        loader.style.display = 'none';
+                        content.style.display = 'block';
+                        content.style.opacity = '0';
+                        
+                        // Fade in content
+                        setTimeout(function() {
+                            content.style.transition = 'opacity 0.5s ease';
+                            content.style.opacity = '1';
+                            
+                            // Lazy load banner background images after content is visible
+                            setTimeout(function() {
+                                var banerBg = document.querySelector('.baner-bg');
+                                var banerBg2 = document.querySelector('.baner-bg-2');
+                                if (banerBg) banerBg.classList.add('loaded');
+                                if (banerBg2) banerBg2.classList.add('loaded');
+                            }, 200);
+                        }, 50);
+                    }, 300);
+                }, remainingTime);
+            }
+            
+            // Hide loader when critical content is ready
+            if (document.readyState === 'complete') {
+                hideLoader();
+            } else {
+                window.addEventListener('load', hideLoader);
+            }
+        });
         $('.fade').slick({
             // dots: true,
             infinite: true,
@@ -551,36 +616,68 @@
 
     </script>
     <script>
+        // Scroll Spy - Automatically highlight nav items based on scroll position
         $(document).ready(function () {
-            $(".about-link").click(function () {
-                $(this).addClass("active");
-                $(".home-link").removeClass("active")
-                $(".contact-link").removeClass("active")
-                $(".resume-link").removeClass("active")
-                $(".work-link").removeClass("active")
+            // Define sections and their corresponding nav links in order
+            var sections = [
+                { id: 'contact', element: '#contact', link: '.contact-link' },
+                { id: 'works', element: '#works', link: '.work-link' },
+                { id: 'resume', element: '#resume', link: '.resume-link' },
+                { id: 'skill', element: '#skill', link: '.skill-link' },
+                { id: 'about', element: '#about', link: '.about-link' },
+                { id: 'home', element: '.fade', link: '.home-link' }
+            ];
+
+            function updateActiveNav() {
+                var scrollPos = $(window).scrollTop() + 200; // offset for better detection
+                
+                // Find the current section
+                var currentSection = null;
+                
+                for (var i = 0; i < sections.length; i++) {
+                    var section = sections[i];
+                    var element = $(section.element);
+                    
+                    if (element.length) {
+                        var sectionTop = element.offset().top;
+                        
+                        // If we've scrolled past this section's top, it's the current one
+                        if (scrollPos >= sectionTop) {
+                            currentSection = section;
+                            break;
+                        }
+                    }
+                }
+                
+                // Default to home if no section found
+                if (!currentSection) {
+                    currentSection = sections[sections.length - 1]; // home
+                }
+                
+                // Update active class
+                $('.header-ul .nav-item').removeClass('active');
+                $(currentSection.link).addClass('active');
+            }
+
+            // Update on scroll with throttling for better performance
+            var scrollTimeout;
+            $(window).on('scroll', function() {
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+                scrollTimeout = setTimeout(updateActiveNav, 50);
             });
-            $(".work-link").click(function () {
+
+            // Update on page load
+            setTimeout(updateActiveNav, 1000);
+
+            // Keep manual click functionality
+            $(".header-ul .nav-item").click(function () {
+                $(".header-ul .nav-item").removeClass("active");
                 $(this).addClass("active");
-                $(".about-link").removeClass("active")
-                $(".contact-link").removeClass("active")
-                $(".resume-link").removeClass("active")
-                $(".home-link").removeClass("active")
+                $("header").removeClass("show");
             });
-            $(".resume-link").click(function () {
-                $(this).addClass("active");
-                $(".about-link").removeClass("active")
-                $(".contact-link").removeClass("active")
-                $(".home-link").removeClass("active")
-                $(".work-link").removeClass("active")
-            });
-            $(".contact-link").click(function () {
-                $(this).addClass("active");
-                $(".about-link").removeClass("active")
-                $(".home-link").removeClass("active")
-                $(".resume-link").removeClass("active")
-                $(".work-link").removeClass("active")
-            });
-        })
+        });
     </script>
 </body>
 

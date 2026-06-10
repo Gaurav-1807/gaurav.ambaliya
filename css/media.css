@@ -348,6 +348,10 @@
     transition: all 0.5s;
     z-index: -1;
   }
+  /* Keep the slide-in drawer fully opaque so the menu stays readable on mobile */
+  .header {
+    background-color: #0C0C0C;
+  }
 
   .wrapper {
     width: auto;

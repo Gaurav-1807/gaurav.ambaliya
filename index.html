@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    <!-- Animated Lottie background (fills the dark frame behind all content) -->
+    <div id="hero-bg" aria-hidden="true"></div>
     <div id="loader">
         <svg viewBox="0 0 100 100">
             <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
@@ -104,17 +106,7 @@
                     <div class="baner baner-bg">
                         <div class="baner-overlay">
                             <div class="baner-center">
-                                <h2>I am a Web Developer..!</h2>
-                                <h4>- Gaurav Ambaliya -</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="baner baner-bg-2">
-                        <div class="baner-overlay">
-                            <div class="baner-center">
-                                <h2>I am a Web Developer..!</h2>
+                                <h2>I am an AI-Powered Full Stack Developer..!</h2>
                                 <h4>- Gaurav Ambaliya -</h4>
                             </div>
                         </div>
@@ -441,40 +433,40 @@
                                 <div class="portfolio-image-6">
                                 <img src="images/Screenshot 2023-06-05 185056.png" alt="SeoGram" loading="lazy">
                                 <h2>SeoGram</h2>
+                                </div>
                             </a>
-                            </div>
                         </div>
                         <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <a href="https://talkflow-front.onrender.com/" target="_blank">
                                 <div class="portfolio-image-6">
                                 <img src="images/chat_app_ss.png" alt="Chat App" loading="lazy">
                                 <h2>Chat App</h2>
+                                </div>
                             </a>
-                            </div>
                         </div>
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                             <a href="https://konsept.pages.dev/" target="_blank">
                                 <div class="portfolio-image-6">
                                 <img src="images/konsep_ss.png" alt="Konsept - The Decore App" loading="lazy">
                                 <h2>Konsept - The Decore App</h2>
+                                </div>
                             </a>
-                            </div>
                         </div>
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                         <a href="https://dv-jwelery.pages.dev/" target="_blank">
                             <div class="portfolio-image-6">
                                 <img src="images/dv_ss.png" alt="DV Jwelery" loading="lazy">
                                 <h2>DV Jwelery</h2>
+                            </div>
                         </a>
-                        </div>
                     </div>
                      <div class=" col-md-6 col-xs-12 col-xl-6 col-sm-12">
                         <a href="https://doctor-mr-scheduling-frontend.onrender.com/" target="_blank">
                             <div class="portfolio-image-6">
                                 <img src="images/Screenshot (40).png" alt="MRAIo - Doctor-MR Scheduling Platform" loading="lazy">
                                 <h2>MRAIo - Doctor-MR Scheduling Platform</h2>
+                            </div>
                           </a>
-                         </div>
                     </div>
                     </div>
                    
@@ -532,6 +524,10 @@
     <script src="https://kit.fontawesome.com/b9bf39324e.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/slick.min.js"></script>
+    <!-- Lottie animated background -->
+    <script src="js/lottie_light.min.js"></script>
+    <script src="js/hero-bg-data.js"></script>
+    <script src="js/hero-bg.js"></script>
     <script>
         // Show content immediately when DOM is ready, don't wait for all images
         document.addEventListener('DOMContentLoaded', function() {
@@ -579,15 +575,7 @@
                 window.addEventListener('load', hideLoader);
             }
         });
-        $('.fade').slick({
-            // dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear',
-            autoplay: true,
-            autoplaySpeed: 1000,
-        });
+        // banner slider removed — static single banner
     </script>
     <script>
         $(document).ready(function () {

@@ -166,9 +166,9 @@ img{
 
 }
 .avtar img{
-    transform: scale(1.5);
+    /* transform: scale(1.5);
     margin-top: -40px;
-    margin-left: 10px;
+    margin-left: 10px; */
     /* transform: translateY(10px); */
 }
 .header h2{

@@ -1070,6 +1070,14 @@ display: none !important;
     color: #2dd4bf;
 }
 
+.contact-form-button a{
+    color: black;
+}
+.contact-form-button:hover a{
+    color: #2dd4bf;
+}
+
+
 .backtotop {
     position: fixed;
     bottom: 25px;

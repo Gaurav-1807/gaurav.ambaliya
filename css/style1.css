@@ -635,7 +635,7 @@ display: none !important;
     font-weight: 300;
     margin: 0 0 10px;
 }
-.about button {
+/* .about button {
     padding: 12px 30px;
     background-color: black;
     color: white;
@@ -645,8 +645,8 @@ display: none !important;
     /* width: ; */
     transition: all 0.5s;
     cursor: pointer;
-}
-.about button a{
+} */
+/* .about button a{
     color: white;
     transition: all 0.5s;
 }
@@ -656,7 +656,7 @@ display: none !important;
 }
 .about button:hover a{
     color: black;
-}
+} */
 
 /* PORTFOLIO  */
 .portfolio{

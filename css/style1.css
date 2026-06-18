@@ -646,17 +646,14 @@ display: none !important;
     transition: all 0.5s;
     cursor: pointer;
 } */
-/* .about button a{
-    color: white;
+.about button a{
+    color: black;
     transition: all 0.5s;
 }
-.about button:hover{
-    background-color: transparent;
-    color: black;
-}
+
 .about button:hover a{
-    color: black;
-} */
+    color: #2dd4bf;
+} 
 
 /* PORTFOLIO  */
 .portfolio{

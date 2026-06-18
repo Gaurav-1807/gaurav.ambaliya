@@ -1056,7 +1056,7 @@ display: none !important;
     border-color: #c7c7c7; 
     box-shadow: none;
 }
-.contact-form button{
+.contact-form-button{
     padding: 10px 20px;
     background-color: #2dd4bf;
     color: #0C0C0C;
@@ -1067,7 +1067,7 @@ display: none !important;
     transition: all 0.5s;
     cursor: pointer;
 }
-.contact-form button:hover{
+.contact-form-button:hover{
     background-color: transparent;
     color: #2dd4bf;
 }

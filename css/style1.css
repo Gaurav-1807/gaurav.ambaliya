@@ -646,8 +646,9 @@ display: none !important;
     transition: all 0.5s;
     cursor: pointer;
 } */
+
 .about button a{
-    color: black;
+    color: black !important;
     transition: all 0.5s;
 }
 

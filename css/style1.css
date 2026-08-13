@@ -432,6 +432,7 @@ img{
     border-bottom: solid 4px #FFF;
     border-right: solid 4px #FFF;
 }
+.baner-center h1,
 .baner-center h2{
     color: #fff;
     font-size: 50px;
@@ -1075,6 +1076,24 @@ display: none !important;
 }
 .contact-form-button:hover a{
     color: #2dd4bf;
+}
+
+a.contact-form-button{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* contact form send status */
+.form-status{
+    margin: 15px 0 0 15px;
+    font-size: 14px;
+    min-height: 18px;
+}
+.form-status.success{
+    color: #2dd4bf;
+}
+.form-status.error{
+    color: #ff6b6b;
 }
 
 
